@@ -1,0 +1,329 @@
+Last login: Thu Oct 26 20:10:15 on console
+[21:12:06] houjingye:~ $ cd Desktop
+[21:12:50] houjingye:Desktop $ cd ..
+[21:13:16] houjingye:~ $ cd Desktop
+[21:15:27] houjingye:Desktop $ cd ..
+[21:16:03] houjingye:~ $ cd Google\ Drive
+[21:16:07] houjingye:Google Drive $ cd gittry
+[21:16:10] houjingye:gittry $ cd local-test
+[21:16:18] houjingye:local-test git:(master) $ cd ..
+[21:23:27] houjingye:gittry $ git clone https://github.com/zhaozheid/remote-test-2.git local-test-2
+Cloning into 'local-test-2'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+[21:28:33] houjingye:gittry $ cd local-test-2
+[21:28:42] houjingye:local-test-2 git:(master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+[21:29:42] houjingye:local-test-2 git:(master) $ git pull
+Already up-to-date.
+[21:40:12] houjingye:local-test-2 git:(master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+[21:40:15] houjingye:local-test-2 git:(master) $ git branch
+* master
+[21:40:21] houjingye:local-test-2 git:(master) $ git brach jingyehou
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+[21:41:24] houjingye:local-test-2 git:(master) $ git checkout jingyehou
+error: pathspec 'jingyehou' did not match any file(s) known to git.
+[21:41:34] houjingye:local-test-2 git:(master) $ git branch
+* master
+[21:42:08] houjingye:local-test-2 git:(master) $ git branch jingyehou
+[21:42:56] houjingye:local-test-2 git:(master) $ git checkout jingyehou
+Switched to branch 'jingyehou'
+[21:43:03] houjingye:local-test-2 git:(jingyehou) $ git push
+fatal: The current branch jingyehou has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin jingyehou
+
+[21:43:25] houjingye:local-test-2 git:(jingyehou) $ --set-upstream origin jingyehou
+zsh: command not found: --set-upstream
+[21:43:49] houjingye:local-test-2 git:(jingyehou) $ git --set-upstream origin jingyehou
+Unknown option: --set-upstream
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+[21:43:57] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+remote: Permission to zhaozheid/remote-test-2.git denied to JingyeHou.
+fatal: unable to access 'https://github.com/zhaozheid/remote-test-2.git/': The requested URL returned error: 403
+[21:44:09] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+remote: Permission to zhaozheid/remote-test-2.git denied to JingyeHou.
+fatal: unable to access 'https://github.com/zhaozheid/remote-test-2.git/': The requested URL returned error: 403
+[21:47:33] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+
+remote: Permission to zhaozheid/remote-test-2.git denied to JingyeHou.
+fatal: unable to access 'https://github.com/zhaozheid/remote-test-2.git/': The requested URL returned error: 403
+[21:48:02] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+
+remote: Permission to zhaozheid/remote-test-2.git denied to JingyeHou.
+fatal: unable to access 'https://github.com/zhaozheid/remote-test-2.git/': The requested URL returned error: 403
+[21:48:17] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+
+remote: Permission to zhaozheid/remote-test-2.git denied to JingyeHou.
+fatal: unable to access 'https://github.com/zhaozheid/remote-test-2.git/': The requested URL returned error: 403
+[21:48:22] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+
+remote: Permission to zhaozheid/remote-test-2.git denied to JingyeHou.
+fatal: unable to access 'https://github.com/zhaozheid/remote-test-2.git/': The requested URL returned error: 403
+[21:48:28] houjingye:local-test-2 git:(jingyehou) $ git push --set-upstream origin jingyehou
+
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/zhaozheid/remote-test-2.git
+ * [new branch]      jingyehou -> jingyehou
+Branch jingyehou set up to track remote branch jingyehou from origin.
+[21:50:05] houjingye:local-test-2 git:(jingyehou) $ git branch
+* jingyehou
+  master
+[21:52:31] houjingye:local-test-2 git:(jingyehou) $ atom .
+zsh: command not found: atom
+[21:52:59] houjingye:local-test-2 git:(jingyehou) $ atom .
+[21:53:16] houjingye:local-test-2 git:(jingyehou) $ git status
+On branch jingyehou
+Your branch is up-to-date with 'origin/jingyehou'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	JingyehouDemo.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[22:00:17] houjingye:local-test-2 git:(jingyehou*) $ git add .
+[22:00:22] houjingye:local-test-2 git:(jingyehou*) $ git status
+On branch jingyehou
+Your branch is up-to-date with 'origin/jingyehou'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   JingyehouDemo.java
+
+[22:00:24] houjingye:local-test-2 git:(jingyehou*) $ git commit -m "myfirst push"
+[jingyehou a63bf89] myfirst push
+ 1 file changed, 9 insertions(+)
+ create mode 100644 JingyehouDemo.java
+[22:00:41] houjingye:local-test-2 git:(jingyehou) $ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 415 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/zhaozheid/remote-test-2.git
+   623a91b..a63bf89  jingyehou -> jingyehou
+[22:00:53] houjingye:local-test-2 git:(jingyehou) $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+[22:12:13] houjingye:local-test-2 git:(master) $ git branch dev/jingyehouConflict
+[22:12:41] houjingye:local-test-2 git:(master) $ git checkout dev/jingyehouConflict
+Switched to branch 'dev/jingyehouConflict'
+[22:12:49] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git status
+On branch dev/jingyehouConflict
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	JingyehouDemo.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[22:13:34] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git status
+On branch dev/jingyehouConflict
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Demo.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[22:14:12] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git add .
+[22:14:16] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git commit -m "conflict"
+[dev/jingyehouConflict 89cf992] conflict
+ 1 file changed, 9 insertions(+)
+ create mode 100644 Demo.java
+[22:14:24] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git status
+On branch dev/jingyehouConflict
+nothing to commit, working tree clean
+[22:14:28] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git push
+fatal: The current branch dev/jingyehouConflict has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev/jingyehouConflict
+
+[22:14:40] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git push --set-upstream origin dev/jingyehouConflict
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 397 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/zhaozheid/remote-test-2.git
+ * [new branch]      dev/jingyehouConflict -> dev/jingyehouConflict
+Branch dev/jingyehouConflict set up to track remote branch dev/jingyehouConflict from origin.
+[22:14:49] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+[22:15:48] houjingye:local-test-2 git:(master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+[22:15:54] houjingye:local-test-2 git:(master) $ git pull
+remote: Counting objects: 27, done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 27 (delta 7), reused 15 (delta 1), pack-reused 0
+Unpacking objects: 100% (27/27), done.
+From https://github.com/zhaozheid/remote-test-2
+   623a91b..3877316  master       -> origin/master
+ * [new branch]      dev/conflict -> origin/dev/conflict
+ * [new branch]      dev/jing     -> origin/dev/jing
+ * [new branch]      dev/qk       -> origin/dev/qk
+ * [new branch]      dev/zgb      -> origin/dev/zgb
+ * [new branch]      dev/zz       -> origin/dev/zz
+Updating 623a91b..3877316
+Fast-forward
+ Demo.java          | 4 ++++
+ Demo1.java         | 4 ++++
+ JingyehouDemo.java | 9 +++++++++
+ qk                 | 8 ++++++++
+ remote-test-2      | 1 +
+ 5 files changed, 26 insertions(+)
+ create mode 100644 Demo.java
+ create mode 100644 Demo1.java
+ create mode 100644 JingyehouDemo.java
+ create mode 100644 qk
+ create mode 160000 remote-test-2
+[22:16:03] houjingye:local-test-2 git:(master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+[22:16:08] houjingye:local-test-2 git:(master) $ git checkout dev/jingyehouConflict
+Switched to branch 'dev/jingyehouConflict'
+Your branch is up-to-date with 'origin/dev/jingyehouConflict'.
+[22:16:40] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git merge master
+Auto-merging Demo.java
+CONFLICT (add/add): Merge conflict in Demo.java
+Automatic merge failed; fix conflicts and then commit the result.
+[22:16:48] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git status
+On branch dev/jingyehouConflict
+Your branch is up-to-date with 'origin/dev/jingyehouConflict'.
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	new file:   Demo1.java
+	new file:   JingyehouDemo.java
+	new file:   qk
+	new file:   remote-test-2
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both added:      Demo.java
+
+[22:17:34] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git status
+On branch dev/jingyehouConflict
+Your branch is up-to-date with 'origin/dev/jingyehouConflict'.
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	new file:   Demo1.java
+	new file:   JingyehouDemo.java
+	new file:   qk
+	new file:   remote-test-2
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both added:      Demo.java
+
+[22:20:17] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git add .
+[22:20:20] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git status
+On branch dev/jingyehouConflict
+Your branch is up-to-date with 'origin/dev/jingyehouConflict'.
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	modified:   Demo.java
+	new file:   Demo1.java
+	new file:   JingyehouDemo.java
+	new file:   qk
+	new file:   remote-test-2
+
+[22:20:23] houjingye:local-test-2 git:(dev/jingyehouConflict*) $ git commit -m "conflict solved"
+[dev/jingyehouConflict e108c6d] conflict solved
+[22:20:49] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/zhaozheid/remote-test-2.git
+   89cf992..e108c6d  dev/jingyehouConflict -> dev/jingyehouConflict
+[22:20:54] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git remote add
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+[22:43:21] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git remote add up https://github.com/JingyeHou/remote-test-2.git
+[22:43:43] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git remote
+origin
+up
+[22:44:12] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git remote get-url origin
+https://github.com/zhaozheid/remote-test-2.git
+[22:46:46] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git branch Jack
+[22:48:40] houjingye:local-test-2 git:(dev/jingyehouConflict) $ git checkout Jack
+Switched to branch 'Jack'
+[22:51:42] houjingye:local-test-2 git:(Jack) $ git add .
+[22:52:38] houjingye:local-test-2 git:(Jack) $ git commit -m ".."
+On branch Jack
+nothing to commit, working tree clean
+[22:52:46] houjingye:local-test-2 git:(Jack) $ git push up Jack
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/JingyeHou/remote-test-2.git
+ * [new branch]      Jack -> Jack
+[22:52:57] houjingye:local-test-2 git:(Jack) $ git status
+On branch Jack
+nothing to commit, working tree clean
+[22:55:10] houjingye:local-test-2 git:(Jack) $ git status
+On branch Jack
+nothing to commit, working tree clean
+[22:55:27] houjingye:local-test-2 git:(Jack) $ git status
+On branch Jack
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Jingye.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[22:56:59] houjingye:local-test-2 git:(Jack*) $ git add .
+[22:57:09] houjingye:local-test-2 git:(Jack*) $ git commit -m "studpid guang"
+[Jack 40afafe] studpid guang
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Jingye.java
+[22:57:21] houjingye:local-test-2 git:(Jack) $ git push up Jack
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JingyeHou/remote-test-2.git
+   e108c6d..40afafe  Jack -> Jack
+[22:57:32] houjingye:local-test-2 git:(Jack) $
